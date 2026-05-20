@@ -14,6 +14,10 @@ Students learn what living things have in common and practice supporting answers
 
 Living, nonliving, and once-living sorting activity.
 
-## Parent Note
+## At-Home Work
 
-Please preview linked videos and websites before student use. Resources are recommended for course support, but parents make the final suitability decision.
+Reading, vocabulary, examples, and worksheet completion happen during the week at home.
+
+## Resource Box
+
+Resources and QR codes will be added once the weekly packet is finalized.
