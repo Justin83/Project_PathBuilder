@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project PathBuilder Biology Foundations</title>
+  <style>
+    :root {
+      --blue: #002c52;
+      --gold: #c99700;
+      --light: #f7f9fb;
+      --ink: #1f2933;
+      --muted: #5f6b7a;
+      --card: #ffffff;
+      --border: #d9e2ec;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--light);
+      line-height: 1.55;
+    }
+    header {
+      background: linear-gradient(135deg, var(--blue), #064b7a);
+      color: white;
+      padding: 3rem 1.25rem;
+      border-bottom: 6px solid var(--gold);
+    }
+    .wrap { max-width: 1050px; margin: 0 auto; }
+    .eyebrow { color: #ffe8a3; text-transform: uppercase; letter-spacing: .08em; font-size: .85rem; font-weight: bold; }
+    h1 { margin: .35rem 0 .75rem; font-size: clamp(2rem, 5vw, 3.6rem); line-height: 1.05; }
+    h2 { color: var(--blue); margin-top: 0; }
+    h3 { color: var(--blue); margin-bottom: .35rem; }
+    main { padding: 1.5rem 1.25rem 3rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.25rem;
+      box-shadow: 0 8px 22px rgba(15, 23, 42, .06);
+    }
+    .notice {
+      border-left: 6px solid var(--gold);
+      background: #fff8df;
+    }
+    a { color: #005ea8; font-weight: 700; }
+    ul { padding-left: 1.25rem; }
+    .week-list a { display: inline-block; margin: .2rem 0; }
+    footer { padding: 1.5rem 1.25rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">Project PathBuilder</div>
+      <h1>Biology Foundations</h1>
+      <p>Guided homeschool-compatible biology study using OpenStax Concepts of Biology, weekly packets, labs, parent-supported assignments, and Tuesday concept check-ins.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="grid">
+      <div class="card">
+        <h2>Course Model</h2>
+        <p>This course uses a weekly rhythm. Students complete selected readings and notebook work during the week, attend a Tuesday concept overview and activity session, and finish follow-up work at home. Parents remain the primary graders unless a separate arrangement is requested.</p>
+      </div>
+      <div class="card notice">
+        <h2>Parent Screening Note</h2>
+        <p>Linked videos and web resources are provided to support weekly biology topics. Parents should preview videos and links according to their family’s standards before student use. Parents make the final suitability decision for their student.</p>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:1rem;">
+      <h2>Primary Text</h2>
+      <p>The primary free textbook is <a href="https://openstax.org/details/books/concepts-biology" target="_blank" rel="noopener">OpenStax Concepts of Biology</a>. Weekly packets will point students to selected sections instead of requiring full-chapter reading unless appropriate.</p>
+    </section>
+
+    <section class="grid" style="margin-top:1rem;">
+      <div class="card week-list">
+        <h2>Weekly Materials</h2>
+        <p>Student packets, worksheets, lab sheets, and resource pages will be added here as they are developed.</p>
+        <p><a href="weeks/week-01/">Week 01 — Biology, Observation, and Course Habits</a></p>
+        <p><a href="weeks/week-02/">Week 02 — Characteristics of Life</a></p>
+        <p><a href="weeks/week-03/">Week 03 — Chemistry of Life</a></p>
+        <p><a href="weeks/week-04/">Week 04 — Cells and Microscopes</a></p>
+        <p><a href="weeks/week-05/">Week 05 — Membranes, Diffusion, and Osmosis</a></p>
+        <p><a href="weeks/week-06/">Week 06 — Enzymes and Life Processes</a></p>
+      </div>
+      <div class="card">
+        <h2>Parent Information</h2>
+        <ul>
+          <li><a href="parent-info/parent-survey.md">Parent Survey Draft</a></li>
+          <li><a href="parent-info/course-start-page.md">Sample Course Start Page</a></li>
+          <li><a href="parent-info/link-screening-policy.md">Link and Parent Screening Policy</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Labs and Resources</h2>
+        <ul>
+          <li><a href="labs/lab-planning.md">Lab Planning Notes</a></li>
+          <li><a href="resources/master-resource-list.md">Master Resource List</a></li>
+          <li><a href="resources/openstax-map.md">OpenStax Topic Map</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Project PathBuilder Biology Foundations. Materials are under development and may be updated as the course is refined.</p>
+  </footer>
+</body>
+</html>
