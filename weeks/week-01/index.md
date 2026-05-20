@@ -15,6 +15,10 @@ Students learn what biology studies, how to set up a biology notebook, and how t
 
 Observation vs. inference activity using natural objects, classroom items, or mystery samples.
 
-## Parent Note
+## At-Home Work
 
-Please preview linked videos and websites before student use. Resources are recommended for course support, but parents make the final suitability decision.
+Reading, vocabulary, notebook setup, and worksheet completion happen during the week at home.
+
+## Resource Box
+
+Resources and QR codes will be added once the weekly packet is finalized.
