@@ -14,6 +14,10 @@ Students learn that living things use enzymes to help chemical reactions happen.
 
 Catalase activity using potato or yeast and hydrogen peroxide.
 
-## Parent Note
+## At-Home Work
 
-Please preview linked videos and websites before student use. Resources are recommended for course support, but parents make the final suitability decision.
+Reading, vocabulary, lab preparation, and worksheet completion happen during the week at home.
+
+## Resource Box
+
+Resources and QR codes will be added once the weekly packet is finalized.
