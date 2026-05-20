@@ -14,6 +14,10 @@ Students learn how materials move into and out of cells.
 
 Gummy bear osmosis, egg osmosis, or dialysis tubing demonstration depending on supplies and location.
 
-## Parent Note
+## At-Home Work
 
-Please preview linked videos and websites before student use. Resources are recommended for course support, but parents make the final suitability decision.
+Reading, vocabulary, predictions, and worksheet completion happen during the week at home. If the selected osmosis activity requires several hours or overnight observation, students may complete a brief at-home follow-up.
+
+## Resource Box
+
+Resources and QR codes will be added once the weekly packet is finalized.
