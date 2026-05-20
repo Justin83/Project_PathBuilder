@@ -1,6 +1,6 @@
 # Parent Survey Draft
 
-This survey is intended to help shape the Biology Foundations course before the full 15-week plan is finalized.
+This survey is intended to help shape the practical details of the Biology Foundations course before the full 15-week plan is finalized. Parents are assumed to remain the primary graders for weekly assignments unless a separate arrangement is made.
 
 ## Access and Printing
 
@@ -10,32 +10,21 @@ This survey is intended to help shape the Biology Foundations course before the 
 4. Would you be able to print weekly worksheets at home if needed?
 5. Would you prefer the instructor to provide printed weekly packets if a small materials or printing fee is needed?
 
-## Curriculum Model
+## Weekly Work and Parent Support
 
-6. Are you comfortable using a free OpenStax biology textbook as the main course resource if the instructor provides weekly guidance, packets, and labs?
-7. Would you prefer a traditional homeschool curriculum such as Apologia even if families need to purchase materials?
-8. Which model sounds more helpful: OpenStax with instructor-created structure, Apologia with instructor support, or a blend?
-9. How important is it that the course not become AP-level or college-level in difficulty?
-10. How important is worldview-sensitive handling of origins and evolution topics?
+6. Would answer keys or parent grading guides be helpful for weekly work?
+7. How many hours per week can your student reasonably spend on biology outside of the Tuesday meeting?
+8. Would your student benefit from a checklist-style weekly assignment page?
 
-## Parent Role and Grading
+## Labs and Activities
 
-11. Are you comfortable with parents serving as the primary graders for weekly assignments?
-12. Would you want answer keys or grading guides for weekly work?
-13. Would you want optional instructor grading or feedback if a separate arrangement is made?
-14. How many hours per week can your student reasonably spend on biology outside the Tuesday meeting?
-15. Would your student benefit from a checklist-style weekly assignment page?
-
-## Weekly Work and Labs
-
-16. Are you comfortable with the normal pattern that labs and hands-on activities happen during the Tuesday meeting, while reading, vocabulary, worksheets, notebook work, and review happen during the week at home?
-17. Are you comfortable with occasional short at-home observations or multi-day lab follow-ups when a specific activity requires waiting, measuring, or checking results over several days?
-18. Would you prefer most wet labs and equipment-based activities to stay on Tuesdays rather than becoming parent-led home labs?
-19. Are you open to occasional campus lab days for microscopes, equipment, or larger activities?
-20. Are there allergies, sensitivities, or safety concerns the instructor should know about?
+9. Are you comfortable with the normal pattern that labs and hands-on activities happen during the Tuesday meeting, while reading, vocabulary, worksheets, notebook work, and review happen during the week at home?
+10. Would you prefer most wet labs and equipment-based activities to stay on Tuesdays rather than becoming parent-led home labs?
+11. Are you open to occasional campus lab days for microscopes, equipment, or larger activities?
+12. Are there allergies, sensitivities, or safety concerns the instructor should know about?
 
 ## Online Resources
 
-21. Are you comfortable with YouTube or web links being included as optional or recommended resources when parents have the final say about student use?
-22. Would QR codes in printed packets be useful for phone access?
-23. Would clickable links in online documents be useful for students working from a computer?
+13. Are you comfortable with YouTube or web links being included as optional or recommended resources when parents have the final say about student use?
+14. Would QR codes in printed packets be useful for phone access?
+15. Would clickable links in online documents be useful for students working from a computer?
