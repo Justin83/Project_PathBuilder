@@ -1,0 +1,123 @@
+project:
+  name: Project PathBuilder
+  short_name: pathbuilder
+  owner: Justin Howard
+  org: ARSG
+  description: >
+    Homeschool/co-op biology curriculum and platform project.
+    First course: 15-week biology co-op for mostly 9th graders (some 8th).
+    Primary text: OpenStax Concepts of Biology (free).
+    Model: parent-primary grading, Justin-led weekly Tuesday sessions and lab days.
+  local_path: C:\xampp\htdocs\Project_PathBuilder
+  github_repo: "[set when repo is on GitHub]"
+  status: active — curriculum planning / infrastructure setup
+
+monday:
+  board_id: "18414133952"
+  board_name: "Project PathBuilder Charter — Homeschool Biology Co-op"
+  board_url: "https://arsg-squad.monday.com/boards/18414133952"
+  # Group IDs — populate after first Monday inspection
+  groups:
+    intake_ideas:        "[tbd]"
+    infrastructure:      "[tbd]"
+    curriculum_planning: "[tbd]"
+    documents_handouts:  "[tbd]"
+    labs_equipment:      "[tbd]"
+    website_app:         "[tbd]"
+    review_approval:     "[tbd]"
+    done:                "[tbd]"
+
+slack:
+  workspace: kypfapi.slack.com
+  channels:
+    changelog:
+      id: C0ATANVNBBR
+      name: "#changelog"
+      use: completed work, sprint summaries, shipped features
+    handoff:
+      id: C0ATQ81QA75
+      name: "#hand-off"
+      use: session handoffs, next steps, blockers for Justin
+    debugging:
+      id: C0ATS3QKPQE
+      name: "#debugging"
+      use: active bugs, auth failures, blockers
+    todo:
+      id: C0ATSHU0NUS
+      name: "#todo"
+      use: new tasks surfaced during a session
+    research_notes:
+      id: C0ATXP3K4G4
+      name: "#research-notes"
+      use: data discovery, catalog notes
+    db_management:
+      id: C0AUE69RDT5
+      name: "#db-management"
+      use: DB health, schema changes, Rob DB tasks
+    agent_log:
+      id: C0ATL7VFPT5   # shared with remote-rob channel for now
+      name: "#remote-rob-is-at-work"
+      use: Rob output, agent run logs, automated summaries
+    alerts:
+      id: "[1password auto-posts — do not post manually]"
+      name: "#alerts"
+      use: 1Password Events API only
+    actual_planning:
+      id: C0B5FT7SUM6
+      name: "#actual-planning"
+      use: standup data, curriculum decisions, cross-agent coordination
+
+infrastructure:
+  digitalocean:
+    token_status: "BROKEN — last audit returned HTTP 401. Refresh before DO API work."
+    postgres_status: "WORKING — doadmin authenticated via postgres MCP"
+    spaces_status: "UNKNOWN — requires separate S3 key pair (SPACES_KEY / SPACES_SECRET)"
+  apps:
+    kentuckypathfinderapi:
+      app_id: "71478695-2484-4d38-8a35-4977b5af524a"
+      url: "https://kentuckypathfinderapi-yf658.ondigitalocean.app"
+      touch: "READ ONLY — do not modify"
+    remote_rob:
+      app_id: "27953397-1097-46d8-9b09-928a121208d"
+      url: "https://remote-rob-nbhz2.ondigitalocean.app"
+      touch: "READ ONLY — do not modify"
+  postgres:
+    source_of_truth: DigitalOcean managed Postgres cluster (doadmin)
+    existing_schemas:
+      - pathfinder_performance_dev   # 16 tables — KYPF dev/staging
+      - transfer_poc                 # 35 tables — includes rob_* tables
+      - public                       # empty
+    pathbuilder_schema: pathbuilder  # TO BE CREATED — not yet applied
+    isolation_pattern: schema-level (not table-name prefixes)
+  spaces:
+    pathbuilder_prefix: "pathbuilder/"
+    proposed_structure: |
+      pathbuilder/
+        biology/
+          2026-fall/
+            week-01/ ... week-15/
+            labs/
+            parent-guides/
+            student-handouts/
+        rendered-pdfs/
+        images/
+        downloads/
+        source-exports/
+
+agents:
+  known:
+    - claude-cli
+    - claude-code
+    - remote-rob
+    - codex
+    - chatgpt
+  credentials_vault: agent-credentials
+  env_pattern: "op run --env-file ./agents/[agent].env -- [command]"
+
+toolstack:
+  languages: [PHP, Python, JavaScript, HTML/CSS]
+  db: PostgreSQL (DigitalOcean Managed)
+  version_control: Git / GitHub
+  local_dev: XAMPP, VS Code, PowerShell
+  mcp_servers: [monday.com, Slack, postgres, digitalocean]
+  cli_tools: [git, gh, op, doctl, curl]
