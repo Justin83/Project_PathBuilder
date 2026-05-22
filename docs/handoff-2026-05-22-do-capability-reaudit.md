@@ -88,7 +88,19 @@ Then, **pick exactly one** of the two branches:
 
 **Branch A (recommended — unblock infrastructure):** plan and execute the 1Password SA-token bootstrap on Justin's workstation per `1PASSWORD_STARTUP_PROTOCOL.md` lines 15–32, then refresh the `do-token` field in the `agent-credentials` vault, then restart Claude Code, then re-run the audit's Phases 2–6 (apps, Spaces, DNS, certs, firewalls, VPCs, registry) against the now-working API. This is the highest-leverage next step because it unblocks everything downstream.
 
+_Estimated wall-clock: **5–20 min.**_
+- Best case (5 min): vault `do-token` is still valid → set `OP_SERVICE_ACCOUNT_TOKEN` as a User env var, restart Claude Code, re-run the audit's API calls.
+- Realistic case (15–20 min): token is stale → mint a fresh PAT in the DO control panel, update the `do-token` field in 1Password, then do the above. Add +5 min if you also want to install `doctl` as a CLI fallback.
+
 **Branch B (parallel — unblock data):** review the `database/migrations/001_create_pathbuilder_schema.sql` schema design; either approve it as-is for a dry run or propose specific changes (PK strategy, timestamp semantics, additional columns, additional tables) **before** the dry run runs. If approved, request Justin's "approved for dry run" reply, run the file as-is (it ends in `ROLLBACK;` so it's a no-op), share the output, get Justin's "approved for commit" reply, flip `ROLLBACK` to `COMMIT`, and re-run. This can happen in parallel with Branch A; it does not depend on the DO API working.
+
+_Estimated wall-clock: **15–30 min.**_
+- GPT planner schema review: 10–15 min (could surface column changes or additional tables).
+- Dry-run execution (`BEGIN … ROLLBACK`): 1–2 min.
+- Justin reads output + replies "approved": variable; call it 2–5 min if he's at the keyboard.
+- Flip `ROLLBACK;` → `COMMIT;`, set `pathbuilder_app` password out of band, re-run, verify schema/role exist: 5–10 min.
+
+_Both branches back-to-back: **25–45 min** of focused time_, assuming the token refresh doesn't surface a separate problem (e.g. DO account 2FA prompt) and the GPT planner doesn't want major schema edits.
 
 If both branches feel premature, the safest standalone action is: open the PR for what's already on this branch so the work is reviewable in GitHub even before any token refresh or schema creation.
 
