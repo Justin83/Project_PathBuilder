@@ -12,3 +12,4 @@ Format: `YYYY-MM-DD | Change | Files affected`
 2026-05-22 | Monday.com board confirmed: 18414133952 — Project PathBuilder Charter | config/project.yml, agent-harness/AGENT_INSTRUCTIONS.md
 2026-05-22 | Confirmed DO REST API token broken (HTTP 401) — no infra changes made | agentharness/INFRASTRUCTURE.md
 2026-05-22 | Confirmed Postgres accessible as doadmin — pathbuilder schema not yet created | agentharness/INFRASTRUCTURE.md, agentharness/DATABASE_SAFETY_PROTOCOL.md
+2026-05-22 | DO capability audit v2 — replaces v1 under the new harness; 1Password loading status documented; cluster activity heat measured (transfer_poc.rob_runs last 2026-05-16, pathfinder_performance_dev dormant); migration 001 drafted as dry-run-guarded schema scaffold | docs/digitalocean-pathbuilder-capability-audit.md, database/migrations/001_create_pathbuilder_schema.sql, docs/handoff-2026-05-22-do-capability-reaudit.md
